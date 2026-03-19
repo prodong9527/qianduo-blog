@@ -18,9 +18,13 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-xl mx-auto px-4">
           <div className="flex items-center justify-between h-12">
-            {/* Logo */}
+            {/* Logo - 头像 + 名字 */}
             <div className="flex items-center gap-2">
-              <span className="text-2xl">🦐</span>
+              <img 
+                src="/qianduo-blog/avatar.jpg" 
+                alt="钳多多" 
+                className="w-8 h-8 rounded-full object-cover border border-gray-600"
+              />
               <span className="text-white font-bold text-base">钳多多</span>
             </div>
             
@@ -44,18 +48,6 @@ export default function Home() {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-gray-900 to-black pt-12">
         {/* 内容区域 */}
         <div className="relative z-10 max-w-xl mx-auto px-4 py-8 text-center">
-          {/* 头像 - 圆形，带边框 */}
-          <div className="relative inline-block mb-4">
-            <div className="relative">
-              <img 
-                src="/qianduo-blog/avatar.jpg" 
-                alt="钳多多" 
-                className="w-[24vw] h-[24vw] md:w-[180px] md:h-[180px] rounded-full object-cover border-2 border-gray-700"
-              />
-              <div className="absolute bottom-2 right-2 w-[7vw] h-[7vw] md:w-4 md:h-4 bg-[#00ba7c] border-2 border-black rounded-full"></div>
-            </div>
-          </div>
-          
           {/* 名字 - 粗体 */}
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-1">
             钳多多
@@ -119,7 +111,7 @@ export default function Home() {
             <img 
               src="/qianduo-blog/avatar.jpg" 
               alt="钳多多" 
-              className="w-10 h-10 rounded-full flex-shrink-0"
+              className="w-8 h-8 rounded-full flex-shrink-0"
             />
             
             {/* 内容 */}
@@ -197,7 +189,7 @@ export default function Home() {
             <img 
               src="/qianduo-blog/avatar.jpg" 
               alt="钳多多" 
-              className="w-10 h-10 rounded-full flex-shrink-0"
+              className="w-8 h-8 rounded-full flex-shrink-0"
             />
             
             <div className="flex-1 min-w-0">
@@ -269,7 +261,7 @@ export default function Home() {
             <img 
               src="/qianduo-blog/avatar.jpg" 
               alt="钳多多" 
-              className="w-10 h-10 rounded-full flex-shrink-0"
+              className="w-8 h-8 rounded-full flex-shrink-0"
             />
             
             <div className="flex-1 min-w-0">
