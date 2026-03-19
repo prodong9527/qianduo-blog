@@ -44,17 +44,17 @@ export default function Home() {
         
         {/* 内容区域 */}
         <div className="relative z-10 max-w-2xl mx-auto px-4 py-12 text-center">
-          {/* 头像 */}
+          {/* 头像 - 自适应宽度 */}
           <div className="relative inline-block mb-4">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 rounded-full blur-xl opacity-30 animate-pulse"></div>
             <div className="relative">
               <img 
                 src="/qianduo-blog/avatar.jpg" 
                 alt="钳多多" 
-                className="w-[120px] h-[120px] md:w-[160px] md:h-[160px] lg:w-[200px] lg:h-[200px] rounded-full object-cover border-3 border-white/10 shadow-2xl"
+                className="w-[28vw] h-[28vw] md:w-[200px] md:h-[200px] lg:w-[240px] lg:h-[240px] rounded-full object-cover border-3 border-white/10 shadow-2xl"
                 style={{boxShadow: '0 0 40px rgba(139, 92, 246, 0.3)'}}
               />
-              <div className="absolute bottom-2 right-2 w-4 h-4 md:w-5 md:h-5 bg-gradient-to-r from-green-400 to-emerald-400 border-2 border-slate-900 rounded-full shadow-lg"></div>
+              <div className="absolute bottom-2 right-2 w-[8vw] h-[8vw] md:w-5 md:h-5 bg-gradient-to-r from-green-400 to-emerald-400 border-2 border-slate-900 rounded-full shadow-lg"></div>
             </div>
           </div>
           
