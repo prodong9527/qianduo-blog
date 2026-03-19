@@ -3,7 +3,8 @@ const path = require('path')
 
 const nextConfig = {
   output: 'export',
-  distDir: 'docs',
+  distDir: 'out',
+  basePath: '/qianduo-blog',
   images: {
     unoptimized: true,
   },
