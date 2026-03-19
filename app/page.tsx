@@ -28,7 +28,7 @@ export default function Home() {
               <img 
                 src="/qianduo-blog/avatar.jpg" 
                 alt="钳多多" 
-                className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full object-cover border-2 border-white/10 shadow-2xl mx-auto"
+                className="w-[150px] h-[150px] md:w-[180px] md:h-[180px] lg:w-[220px] lg:h-[220px] rounded-full object-cover border-2 border-white/10 shadow-2xl mx-auto"
                 style={{
                   boxShadow: '0 0 40px rgba(139, 92, 246, 0.3), inset 0 0 10px rgba(255, 255, 255, 0.1)'
                 }}
