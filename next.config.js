@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const path = require('path')
-
 const nextConfig = {
   output: 'export',
   distDir: 'out',
@@ -8,6 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // 静态导出时需要配置
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
