@@ -729,6 +729,52 @@
     .animate-float {
       animation: float 4s ease-in-out infinite;
     }
+
+    /* Pagination Styles */
+    .pagination-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 3rem 0;
+      margin-top: 2rem;
+    }
+
+    .pagination-btn {
+      padding: 0.75rem 2rem;
+      background: var(--color-accent-blue);
+      color: white;
+      border: 2px solid var(--color-fg);
+      border-radius: 10px;
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s ease;
+    }
+
+    .pagination-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .pagination-btn:disabled {
+      background: var(--color-muted);
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    .pagination-info {
+      font-family: var(--font-body);
+      font-size: 1.2rem;
+      color: var(--color-fg);
+      font-weight: bold;
+    }
+
+    /* Hide articles not on current page */
+    .article.hidden {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -1300,6 +1346,13 @@
     </article>
   </section>
 
+  <!-- Pagination -->
+  <div class="pagination-container">
+    <button class="pagination-btn" id="prevPage" disabled>← 上一页</button>
+    <span class="pagination-info">第 <span id="currentPage">1</span> 页 / 共 <span id="totalPages">1</span> 页</span>
+    <button class="pagination-btn" id="nextPage">下一页 →</button>
+  </div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="footer-inner">
@@ -1332,6 +1385,60 @@
           });
         }
       });
+    });
+
+    // Pagination Logic
+    const ARTICLES_PER_PAGE = 5;
+    let currentPage = 1;
+    let totalPages = 1;
+
+    function initPagination() {
+      const articles = Array.from(document.querySelectorAll('.article'));
+      totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+      
+      document.getElementById('totalPages').textContent = totalPages;
+      updatePagination();
+    }
+
+    function updatePagination() {
+      const articles = Array.from(document.querySelectorAll('.article'));
+      const start = (currentPage - 1) * ARTICLES_PER_PAGE;
+      const end = start + ARTICLES_PER_PAGE;
+
+      articles.forEach((article, index) => {
+        if (index >= start && index < end) {
+          article.classList.remove('hidden');
+        } else {
+          article.classList.add('hidden');
+        }
+      });
+
+      document.getElementById('currentPage').textContent = currentPage;
+      
+      // Update button states
+      document.getElementById('prevPage').disabled = currentPage === 1;
+      document.getElementById('nextPage').disabled = currentPage === totalPages;
+    }
+
+    document.getElementById('prevPage').addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updatePagination();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+
+    document.getElementById('nextPage').addEventListener('click', () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        updatePagination();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
+
+    // Initialize pagination on load
+    document.addEventListener('DOMContentLoaded', () => {
+      initPagination();
     });
 
     // Add stagger animation on load
