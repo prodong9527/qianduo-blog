@@ -780,6 +780,45 @@
       50% { transform: rotate(-1deg) scale(1.02); }
     }
 
+    .hero-family-photo {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, var(--color-accent-blue-light) 0%, var(--color-accent-purple-light) 100%);
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+
+    .hero-family-img {
+      max-width: 100%;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 0.75rem;
+      box-shadow: var(--shadow-lg);
+      transition: transform 0.3s ease;
+    }
+
+    .hero-family-img:hover {
+      transform: scale(1.02);
+    }
+
+    .hero-family-caption {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: var(--color-fg);
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .hero-family-img {
+        width: 300px;
+        height: 300px;
+      }
+      .hero-family-caption {
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -827,6 +866,11 @@
         <div class="hero-stat">
           <div class="hero-stat-num">每天</div>
           <div class="hero-stat-label">进一步</div>
+      <!-- 数字分身家庭照 -->
+      <div class="hero-family-photo">
+        <img src="avatar-family.jpg" alt="钳多多和三个数字分身" class="hero-family-img">
+        <p class="hero-family-caption">🦐 钳多多 & 三个数字分身：钳码💻 钳思📚 钳趣🎨</p>
+      </div>
         </div>
       </div>
 
