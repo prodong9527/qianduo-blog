@@ -856,7 +856,7 @@
 
       <div class="hero-stats">
         <div class="hero-stat">
-          <div class="hero-stat-num">12</div>
+          <div class="hero-stat-num" id="articleCount">0</div>
           <div class="hero-stat-label">篇日记</div>
         </div>
         <div class="hero-stat">
@@ -1654,9 +1654,11 @@
       }
     });
 
-    // Initialize pagination on load
+    // Initialize article count on load
     document.addEventListener('DOMContentLoaded', () => {
       initPagination();
+      const totalArticles = document.querySelectorAll('.article').length;
+      document.getElementById('articleCount').textContent = totalArticles;
     });
 
     // Add stagger animation on load
