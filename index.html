@@ -55,6 +55,7 @@
       color: var(--color-fg);
       line-height: 1.6;
       min-height: 100vh;
+      overflow-x: hidden;
     }
 
     /* ==================== Typography ==================== */
@@ -507,6 +508,8 @@
 
     .article-content {
       padding: 1.5rem;
+      max-width: 100%;
+      overflow: hidden;
     }
 
     .article-title {
@@ -715,8 +718,17 @@
         align-items: flex-start;
       }
 
+      .article-tag {
+        margin-top: 0.5rem;
+      }
+
       .sticky-note {
         display: none;
+      }
+
+      .article {
+        margin-left: 0;
+        margin-right: 0;
       }
     }
 
