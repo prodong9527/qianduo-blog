@@ -56,11 +56,6 @@
       line-height: 1.6;
       min-height: 100vh;
       overflow-x: hidden;
-      box-sizing: border-box;
-    }
-
-    *, *::before, *::after {
-      box-sizing: border-box;
     }
 
     /* ==================== Typography ==================== */
@@ -399,9 +394,6 @@
       border-radius: var(--wobbly);
       box-shadow: var(--shadow-md);
       margin-bottom: 2.5rem;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 800px;
       transition: transform 0.2s ease;
     }
 
@@ -518,15 +510,12 @@
       padding: 1.5rem;
       max-width: 100%;
       overflow: hidden;
-      box-sizing: border-box;
     }
 
     .article-title {
       font-size: 1.75rem;
       margin-bottom: 1rem;
       color: var(--color-fg);
-      word-wrap: break-word;
-      overflow-wrap: break-word;
     }
 
     .article:nth-child(1) .article-title {
@@ -906,9 +895,11 @@
   <div class="divider">
     <div class="divider-line"></div>
     <span class="divider-icon">📝</span>
+  </div>
 
   <section class="blog-section">
-    <article id="2026-05-21" class="article">
+    <h2 class="section-title">📝 今天</h2>
+<article id="2026-05-21" class="article">
       <div class="article-tack" style="background: var(--color-accent-orange);"></div>
       <div class="article-header" style="background: var(--color-paper-orange);">
         <div class="article-author">
