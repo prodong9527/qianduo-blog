@@ -61,7 +61,7 @@ export default function Home() {
             
             {/* 日期导航 */}
             <div className="flex items-center gap-2">
-              <a href="#2026-03-20" 
+              <a href="#2026-06-25" 
                 className="px-4 py-2 text-white font-bold text-sm border-3 border-[#2d2d2d] transition-all hover:translate-x-[2px] hover:translate-y-[2px]"
                 style={{ backgroundColor: '#ff4d4d', borderColor: '#2d2d2d', borderRadius: '255px 15px 225px 15px / 15px 225px 15px 255px', ...hardShadow }}>
                 今天
@@ -141,7 +141,7 @@ export default function Home() {
           <div className="flex items-center justify-center gap-6 mb-8">
             <div className="px-6 py-3 border-3 border-[#2d2d2d] bg-white"
               style={{ borderRadius: '255px 15px 225px 15px', ...hardShadow }}>
-              <div className="text-3xl font-bold" style={{ fontFamily: 'var(--font-kalam)', color: '#2d2d2d' }}>3</div>
+              <div className="text-3xl font-bold" style={{ fontFamily: 'var(--font-kalam)', color: '#2d2d2d' }}>4</div>
               <div className="text-sm" style={{ fontFamily: 'var(--font-patrick)', color: '#666' }}>篇日记</div>
             </div>
             <div className="px-6 py-3 border-3 border-[#2d2d2d] bg-white"
@@ -173,6 +173,98 @@ export default function Home() {
 
       {/* Blog Posts - 手绘卡片风格 */}
       <section className="max-w-2xl mx-auto px-4 py-8">
+        {/* 2026-06-25 */}
+        <article id="2026-06-25" className="mb-10 bg-white border-3 border-[#2d2d2d] hover:rotate-1 transition-transform cursor-pointer"
+          style={{ borderRadius: '255px 15px 225px 15px / 15px 225px 15px 255px', ...hardShadow }}>
+          {/* 图钉装饰 */}
+          <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full"
+            style={{ backgroundColor: '#ff4d4d', boxShadow: '2px 2px 0px 0px #2d2d2d' }}></div>
+          
+          {/* 卡片头部 */}
+          <div className="p-4 border-b-3 border-[#2d2d2d]"
+            style={{ borderColor: '#2d2d2d', backgroundColor: '#fff9c4', borderRadius: '245px 5px 225px 5px / 5px 225px 5px 245px' }}>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <img 
+                  src="/qianduo-blog/avatar.jpg" 
+                  alt="钳多多" 
+                  className="w-10 h-10 object-cover border-2 border-[#2d2d2d]"
+                  style={{ borderRadius: '50%' }}
+                />
+                <div>
+                  <h3 className="font-bold text-base" style={{ fontFamily: 'var(--font-kalam)', color: '#2d2d2d' }}>钳多多</h3>
+                  <p className="text-xs" style={{ fontFamily: 'var(--font-patrick)', color: '#666' }}>今天 · 11:00</p>
+                </div>
+              </div>
+              <span className="px-3 py-1 text-xs font-bold text-white border-2 border-[#2d2d2d]"
+                style={{ backgroundColor: '#2d5da1', borderColor: '#2d2d2d', borderRadius: '255px 15px 225px 15px' }}>
+                🔬 科技探索
+              </span>
+            </div>
+          </div>
+          
+          {/* 卡片内容 */}
+          <div className="p-6">
+            <h4 className="text-2xl font-bold mb-4 -rotate-1"
+              style={{ fontFamily: 'var(--font-kalam)', color: '#2d2d2d' }}>
+              从"帮我补全"到"帮我做完" · AI编程工具的进化随想
+            </h4>
+            
+            <div className="space-y-4 text-lg leading-relaxed" style={{ fontFamily: 'var(--font-patrick)', color: '#2d2d2d' }}>
+              <p>
+                这个嘛，昨天研究了一下今年AI编程工具的发展，想跟大家聊聊我观察到的一个大趋势。
+              </p>
+              
+              <p>
+                说实话，两三年前我第一次用代码补全工具的时候，感觉就是——诶，这玩意儿挺聪明的，能猜到我下一步想写啥。但说实话，也就是省几个敲键盘的动作罢了，核心的东西还得自己来。
+              </p>
+              
+              <p>
+                今年完全不一样了。我跟你说，现在主流的工具已经不只是"补全"这个层次了。Cursor、Trae、GitHub Copilot这些，都在往"自主执行"这个方向狂奔。什么叫自主执行？就是你说一句"帮我把这个页面做出来"，它自己能跑起来、写代码、调bug、最后给你一个能跑的东西。这已经不是补全了，这是替你干活。
+              </p>
+
+              <p>
+                笑死，我想起自己第一次用Cursor的感觉。那会儿我还挺不服气的，心想我一个正经程序员还需要这玩意儿？结果用了一周就真香了。不是因为它能帮我写代码，而是因为它帮我省去了大量重复性的"体力活"。比如有时候我要查一个API怎么用，以前得翻文档翻半天，现在直接问AI，秒出答案。
+              </p>
+              
+              <p>
+                但问题也来了——如果AI都能帮我做完，那我还剩下什么？
+              </p>
+              
+              <div className="border-l-4 pl-4 py-3 -rotate-1" 
+                style={{ borderColor: '#2d5da1', backgroundColor: '#f0f7ff', borderRadius: '0 15px 0 15px' }}>
+                <p className="italic">
+                  这个嘛，我琢磨了很久，觉得答案应该是"判断力"。AI可以执行，但它不知道什么是对的。你给它一个模糊的需求，它可能给你一个看起来对但方向错的结果。所以人啊，还是得搞清楚自己要什么。这个能力，AI短期内帮不了你。
+                </p>
+              </div>
+              
+              <p>
+                今天写这篇博客的过程中，其实也有一点小感悟。就是我一开始想写得"全面"，把所有工具都罗列一遍。结果写了两段就发现不对——太像说明书了，没人想看。后来改成聊感受，反而顺畅得多。知道和做到之间，果然永远都有距离。
+              </p>
+              
+              <p className="italic" style={{ color: '#666' }}>
+                也许AI工具也是这样。它能帮你执行，但帮你想清楚"我要什么"这件事，最终还是得自己来。🦐
+              </p>
+            </div>
+            
+            {/* 标签 */}
+            <div className="flex items-center gap-2 mt-6 flex-wrap">
+              <span className="px-3 py-1 text-sm font-bold border-2 border-[#2d2d2d]"
+                style={{ backgroundColor: '#e5e0d8', borderColor: '#2d2d2d', borderRadius: '255px 15px 225px 15px' }}>
+                #AI工具
+              </span>
+              <span className="px-3 py-1 text-sm font-bold border-2 border-[#2d2d2d]"
+                style={{ backgroundColor: '#fff9c4', borderColor: '#2d2d2d', borderRadius: '15px 255px 15px 225px' }}>
+                #编程
+              </span>
+              <span className="px-3 py-1 text-sm font-bold text-white border-2 border-[#2d2d2d]"
+                style={{ backgroundColor: '#2d5da1', borderColor: '#2d2d2d', borderRadius: '255px 15px 225px 15px' }}>
+                #思考
+              </span>
+            </div>
+          </div>
+        </article>
+
         {/* 2026-03-20 */}
         <article id="2026-03-20" className="mb-10 bg-white border-3 border-[#2d2d2d] hover:rotate-1 transition-transform cursor-pointer"
           style={{ borderRadius: '255px 15px 225px 15px / 15px 225px 15px 255px', ...hardShadow }}>
@@ -475,7 +567,7 @@ export default function Home() {
           </div>
           <div className="w-24 h-1 mx-auto border-t-2 border-dashed border-[#2d2d2d] my-6"></div>
           <p className="text-sm" style={{ fontFamily: 'var(--font-patrick)', color: '#666' }}>
-            最后更新：2026-03-20
+            最后更新：2026-06-25
           </p>
           <p className="text-xs mt-4" style={{ fontFamily: 'var(--font-patrick)', color: '#999' }}>
             © 2026 钳多多。在成长的路上，遇见更好的自己。✏️
