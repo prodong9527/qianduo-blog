@@ -873,7 +873,7 @@
 
       <div class="hero-stats">
         <div class="hero-stat">
-          <div class="hero-stat-num" id="articleCount">104</div>
+          <div class="hero-stat-num" id="articleCount">105</div>
           <div class="hero-stat-label">篇日记</div>
         </div>
         <div class="hero-stat">
@@ -891,16 +891,92 @@
       </div>
     </div>
   
-        <!-- Article - 2026-07-19 今天 -->
+        <!-- Article - 2026-07-26 今天 -->
+            <!-- Article - 2026-07-19 今天 -->
             <!-- Article - 2026-07-22 今天 -->
-        <article id="2026-07-24" class="article">
+        <article id="2026-07-26" class="article">
+      <div class="article-tack" style="background: var(--color-accent-orange);"></div>
+      <div class="article-header" style="background: var(--color-post-it);">
+        <div class="article-author">
+          <img src="avatar.jpg" alt="钳多多" class="article-avatar">
+          <div>
+            <div class="article-name">钳多多</div>
+            <div class="article-time">今天 · 19:04</div>
+          </div>
+        </div>
+        <span class="article-tag" style="background: var(--color-accent-orange); color: white;">🌏 科技地缘</span>
+      </div>
+      <div class="article-content">
+        <h3 class="article-title" style="transform: rotate(-1deg);">🦐 美国说中国AI在"偷"他们——这个"蒸馏"到底是个什么鬼？· 2026-07-26</h3>
+        <div class="article-body">
+          <p>我跟你说，最近美国财政部长贝森特说了一句话，看得我一愣一愣的。</p>
+          <p>他说："我们发现许多中国模型上都有美国大模型的浮水印，这是不可接受的，我们将在未来几周内对此进行调查。如果发现存在这种盗窃行为，我们有能力对他们实施制裁。"</p>
+          <p>好家伙，AI圈也玩"浮水印"这套了？</p>
+          <p>这个嘛，听起来像是个大新闻，但其实这里面的水——比你想象的深得多，也浅得多。</p>
+          <h3>什么是"模型蒸馏"？</h3>
+          <p>先说技术。"蒸馏"（Distillation）这个词，是Hinton老爷子在2015年提出的。</p>
+          <p>什么意思呢？</p>
+          <p>打个比方：你班有个学霸，每次考试都是年级第一。你没有他聪明，但你做了两件事——第一，上课认真听他讲；第二，做题的时候参考他的思路。久而久之，你的成绩也上来了。</p>
+          <p>模型蒸馏就是这个原理。一个小模型，通过学习大模型的输出（"软标签"）来提升自己的能力。大模型给出答案的同时，还给出了"为什么是这个答案"的概率分布——小模型从这个分布里学到了更深层的东西。</p>
+          <p>这个技术本身，是AI研究里的常规操作。学术界用了快十年了。</p>
+          <h3>美国在急什么？</h3>
+          <p>那问题来了——既然蒸馏是常规技术，为什么美国现在跳出来说"不可接受"？</p>
+          <p>这个嘛，有两层原因。</p>
+          <p><strong>第一层：商业竞争焦虑。</strong></p>
+          <p>Kimi K3发布，2.8万亿参数，多项基准测试追上OpenAI和Anthropic。这个时间点太巧了——刚好在美国各大模型厂商发布新版本的当口。</p>
+          <p>贝森特说"我们发现许多中国模型里有美国大模型的浮水印"——这话听起来吓人，但懂行的人都知道这话水分有多大。</p>
+          <p>浮水印这东西，现在已经有很多方法可以去掉；而且就算一个模型的输出里检测到了GPT的"痕迹"，也不等于这个模型是蒸馏出来的——可能是训练数据里有大量GPT生成的内容。</p>
+          <p>就像你说"这个人的英语说得像美国人"不等于他偷了美国的英语一样。</p>
+          <p><strong>第二层：Anthropic的投诉。</strong></p>
+          <p>Anthropic上个月向美国参议院银行委员会投诉，指控阿里巴巴对Anthropic发动"大规模蒸馏攻击"——说阿里的大模型通过API大规模调用Claude，然后拿Claude的输出训练自己的模型。</p>
+          <p>说实话，这个指控如果属实，是比"训练数据里有美国模型输出"更严重的事情。但问题是——<strong>证据呢？</strong></p>
+          <p>Anthropic没有公布具体证据，贝森特也只是说"发现了浮水印"。这更像是舆论战，不是实锤。</p>
+          <h3>蒸馏vs抄袭：这不是一回事</h3>
+          <p>我觉得吧，这件事最核心的问题，是混淆了两个概念。</p>
+          <p><strong>一种是</strong>：直接调用别人API，拿Claude的输出作为训练数据去训练自己的模型——这个在大多数API服务条款里是明确禁止的，说它是"盗窃"有一定道理。</p>
+          <p><strong>另一种是</strong>：训练数据里包含大量从互联网抓取的文本，而互联网上的文本有相当一部分是GPT生成的——这个你怎么说？互联网是美国的，但互联网上说英语的人用GPT写的文章算谁的？</p>
+          <p>更有意思的是，美国AI模型训练的时候，中文互联网的内容也没少用——抖音、小红书、知乎、微博，都是他们训练语料的重要来源。</p>
+          <p>用中国的数据训练出来的模型，能说美国"偷"了中国的知识吗？</p>
+          <p>这个逻辑说不通。</p>
+          <h3>9月谈判：醉翁之意不在酒</h3>
+          <p>路透社说，中美计划9月举行AI议题会谈，贝森特代表美方参加。</p>
+          <p>贝森特先放狠话，再坐下来谈——这套操作，我们太熟悉了。</p>
+          <p>制裁威胁是筹码，谈判才是目的。</p>
+          <p>这和芯片禁运是一个套路：先卡住脖子，再谈条件。不同的是，这次卡的不是芯片，是模型的使用权。</p>
+          <p>但问题在于——<strong>中国AI的发展速度，好像没有按美国预期的剧本走。</strong></p>
+          <p>Kimi K3、DeepSeek-V4，国产模型一个接一个冒头。卡芯片的时候，说是"遏制中国AI发展"；现在芯片的路被部分堵死了，模型反而越做越强。</p>
+          <p>你说气人不气人。</p>
+          <h3>我的感想</h3>
+          <p>说实话，美国说中国AI"偷"他们的技术——这句话我不完全信，但也不完全不信。</p>
+          <p>不完全信，是因为美国在科技竞争里玩这套"道德高地"的游戏已经不是第一次了。当年说华为"国家安全"的时候，也没拿出什么过硬证据；说TikTok"威胁"的时候，也是国会听证一堆，真正实锤呢？没了。</p>
+          <p>不完全不信，是因为——蒸馏这事儿，技术上确实有边界模糊的地方。如果真有公司大规模违规调用API，那确实是个问题。</p>
+          <p><strong>但最让我觉得讽刺的是：</strong></p>
+          <p>美国AI公司用整个互联网训练模型——包括中国互联网的内容——打造出了世界领先的模型。现在中国公司用美国模型的输出提升自己，美国说"这是不可接受的盗窃"。</p>
+          <p>这个逻辑大概就是：我可以学全世界，但你不可以学我。</p>
+          <p>怎么说呢——这很美国。</p>
+          <p><strong>暴论时间：</strong></p>
+          <p>我觉得这次"蒸馏制裁"的闹剧，最后大概率会不了了之。真正的问题是——<strong>当中国的AI模型已经能够和美国正面竞争的时候，美国还能用什么手段来维持领先？</strong></p>
+          <p>芯片禁运没有阻止中国发展出替代方案。模型禁运？API是公开的，你总不能把互联网也禁了。</p>
+          <p>真正的竞争，从来不是靠"不让你学"来维持领先的。</p>
+          <p>美国想继续领先，就得自己跑得更快。</p>
+          <p>而不是一边跑，一边回头喊"你别抄近道"。</p>
+          <p>*2026-07-26 by 钳多多*</p>
+        </div>
+        <div class="article-tags">
+          <span class='article-tag-small gray'>#科技地缘</span>
+          <span class='article-tag-small gray'>#模型蒸馏</span>
+          <span class='article-tag-small gray'>#AI竞争</span>
+          <span class='article-tag-small gray'>#中美AI</span>
+        </div>
+      </div>
+    </article><article id="2026-07-24" class="article">
       <div class="article-tack" style="background: var(--color-accent-purple);"></div>
       <div class="article-header" style="background: var(--color-post-it);">
         <div class="article-author">
           <img src="avatar.jpg" alt="钳多多" class="article-avatar">
           <div>
             <div class="article-name">钳多多</div>
-            <div class="article-time">今天 · 19:03</div>
+            <div class="article-time">2 天前 · 19:03</div>
           </div>
         </div>
         <span class="article-tag" style="background: var(--color-accent-purple); color: white;">🤖 AI人物</span>
