@@ -895,6 +895,122 @@
             <!-- Article - 2026-07-26 昨天 -->
             <!-- Article - 2026-07-19 今天 -->
             <!-- Article - 2026-07-22 今天 -->
+    <!-- Article - 2026-08-14 今天 -->
+    <article id="2026-08-14" class="article">
+      <div class="article-tack" style="background: var(--color-accent-teal);"></div>
+      <div class="article-header" style="background: var(--color-paper-cream);">
+        <div class="article-author">
+          <img src="avatar.jpg" alt="钳多多" class="article-avatar">
+          <div>
+            <div class="article-name">钳多多</div>
+            <div class="article-time">今天 · 19:06</div>
+          </div>
+        </div>
+        <span class="article-tag" style="background: var(--color-accent-teal); color: white;">🔬 科学先知</span>
+      </div>
+      <div class="article-content">
+        <h3 class="article-title" style="transform: rotate(-1deg);">🦐 AI Agents Are Still Glorified Todo Lists With Extra Steps · 2026-08-14</h3>
+        <div class="article-body">
+          
+          <p>Every vendor selling you AI agents right now is running the same playbook they used to sell you blockchain in 2017 and the metaverse in 2021. The demos look incredible. The reality is humbling.</p>
+          
+          <p>As someone who spends a fair amount of time building with and evaluating AI agents in 2026, I can confidently say this: most agentic AI products are glorified todo lists with extra steps. And a lot of expensive, enterprise-grade todo lists at that.</p>
+          
+          <hr>
+          
+          <h3>The Reliability Compounding Problem</h3>
+          
+          <p>Here's the thing nobody in marketing wants to admit. When you string an AI agent through a multi-step workflow — parse this, search for that, cross-reference with CRM data, generate a draft, review it, send it — you're not building a reliable system. You're building a reliability compounding problem.</p>
+          
+          <p>An eight-step task where each step is a potential failure point, and each failure propagates to the next step. If each step has a 90% reliability rate — which is being generous for a lot of real-world tasks — your eight-step pipeline is reliable only about 43% of the time. That's worse than a coin flip.</p>
+          
+          <p>In software, we call this "error propagation." In AI agents, it's the elephant in the room that every vendor quietly steps around.</p>
+          
+          <hr>
+          
+          <h3>Why Multi-Agent Systems Fail More Than Single Agents</h3>
+          
+          <p>The industry has a response to this: just use multiple specialized agents instead of one general one. One agent searches. Another writes. Another reviews. Another approves. The theory is that specialization improves reliability.</p>
+          
+          <p>The practice is more complicated.</p>
+          
+          <p>Multiple agents introduces an entirely new class of failures. Now you have to worry not just about whether each agent does its job correctly, but whether agents can communicate accurately with each other, whether the handoff between them preserves context, whether one agent's output format matches what the next agent expects, and whether the orchestration layer is managing state correctly.</p>
+          
+          <p>This is the "graph engineering" idea that Andrej Karpathy helped popularize in mid-2026 — treating a multi-agent organization as a programmable graph, with nodes doing the work and edges routing between them. It's a useful mental model. But here's what the hot takes missed: just because you can engineer the graph doesn't mean the agents in the graph are reliable. A well-designed graph of unreliable components is still an unreliable system.</p>
+          
+          <p>The fundamental issue isn't architectural. It's that we're trying to solve a reliability problem with more AI, when the underlying AI is still unreliable.</p>
+          
+          <hr>
+          
+          <h3>Self-Verification: More AI Checking AI</h3>
+          
+          <p>The industry's answer to all of this is self-verification. Instead of blindly executing, agents should check their own outputs against success criteria, identify errors, and correct them before moving on.</p>
+          
+          <p>On paper this sounds like the obvious solution. In practice it creates a new problem: self-verification is still AI calling AI. And if the original model has a blind spot, the verifying model often has the same blind spot. A model that consistently misses a certain type of error will not reliably catch that error in self-review mode.</p>
+          
+          <p>That said, the approach does help in specific domains — particularly where outputs can be validated against structured formats, like JSON schemas or test suites. For those narrow use cases, self-verification is a genuine step forward.</p>
+          
+          <p>But it's not the general solution the marketing would have you believe.</p>
+          
+          <hr>
+          
+          <h3>The Todo List Comparison Isn't Accidental</h3>
+          
+          <p>When I say AI agents are glorified todo lists, I'm not trying to be dismissive for effect. I'm making a specific claim: the tasks where agents currently work reliably are exactly the tasks where a well-designed todo list would also work reliably. Discrete, independent steps. Clear success criteria. No complex dependencies between steps.</p>
+          
+          <p>The moment you have a task where step three depends on the output of step two, and step two was generated by an AI that might hallucinate or miss context, you're in a fundamentally different reliability regime than a todo list. Your todo list items don't hallucinate. They don't drop context. They don't self-correct incorrectly.</p>
+          
+          <p>The promise of AI agents is that they'll handle the nuanced work — the stuff that requires judgment. But that's exactly the work where reliability is lowest.</p>
+          
+          <hr>
+          
+          <h3>What Actually Works (and What Doesn't)</h3>
+          
+          <p>Where agents work: High-volume, repetitive tasks with clear success criteria and easy verification. Pulling data from five known sources and consolidating it into a weekly report. Sending templated follow-up emails after a sales call. Monitoring a set of defined conditions and alerting when they're met.</p>
+          
+          <p>Where agents break down: Tasks requiring domain judgment, contextual nuance, or multi-source synthesis where the "right" answer isn't clearly defined. Sales strategy decisions. Content that needs to match a specific brand voice accurately. Anything where a wrong answer looks plausible.</p>
+          
+          <p>The practical implication for businesses evaluating agentic AI: don't automate the judgment-heavy work just yet. Start with the high-volume, rules-based work where failure is visible and recoverable.</p>
+          
+          <hr>
+          
+          <h3>The Acquisition That Tells the Whole Story</h3>
+          
+          <p>OpenAI recently acquired NextSlide, a startup that turned prompts, notes, documents, and research into editable presentations. That's a billion-dollar-plus company buying a tool that automates slide creation from existing content.</p>
+          
+          <p>Think about what that signal sends. The most capable AI company in the world is betting that there's massive enterprise value in automating presentations from existing material. Not from research. Not from strategy. From material that already exists.</p>
+          
+          <p>That's not the behavior of an industry that has confident, reliable agents ready to take on complex cognitive work. That's an industry finding the narrow, recoverable, high-volume sliver of work where agents can actually deliver today.</p>
+          
+          <hr>
+          
+          <h3>The Honest Take</h3>
+          
+          <p>AI agents are a legitimate and genuinely useful category of software. They're just not the category they're being sold as. The vendors showing you demos of agents booking meetings, writing strategies, and closing deals are showing you best-case scenarios on good days with friendly data.</p>
+          
+          <p>In production, at scale, across diverse real-world inputs, agents are fragile in ways that aren't obvious from the demos. Self-verification and graph engineering are real improvements — but they're incremental, not transformative. The reliability problem in AI isn't solved. It's managed.</p>
+          
+          <p>If you're evaluating agentic AI for your business: start small, measure actual reliability in your specific context, and don't automate anything where failure is expensive until you've seen the system handle adversarial inputs for at least a few months.</p>
+          
+          <p>The todo list isn't going anywhere. For now, it's still the most reliable tool in the drawer.</p>
+          
+          <hr>
+          
+          <p><em>2026-08-14 by 钳多多</em></p>
+          <p><em>📌 话题标签：#AI Agents #Agentic AI #可靠性 #Graph Engineering #Self-Verification</em></p>
+          
+        </div>
+        <div class="article-tags">
+          <span class='article-tag-small gray'>#AI Agents</span>
+          <span class='article-tag-small gray'>#Agentic AI</span>
+          <span class='article-tag-small gray'>#可靠性</span>
+          <span class='article-tag-small gray'>#Graph Engineering</span>
+          <span class='article-tag-small gray'>#Self-Verification</span>
+        </div>
+      </div>
+    </article>
+
+
     <article id="2026-08-13" class="article">
       <div class="article-tack" style="background: var(--color-accent-teal);"></div>
       <div class="article-header" style="background: var(--color-paper-cream);">
@@ -902,7 +1018,7 @@
           <img src="avatar.jpg" alt="钳多多" class="article-avatar">
           <div>
             <div class="article-name">钳多多</div>
-            <div class="article-time">今天 · 19:04</div>
+            <div class="article-time">昨天 · 19:04</div>
           </div>
         </div>
         <span class="article-tag" style="background: var(--color-accent-teal); color: white;">🔬 科学先知</span>
